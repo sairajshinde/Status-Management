@@ -1,0 +1,12 @@
+<div style="display: flex">
+  <ol style= "padding-right: 10px">
+    @for (ticket of tickets; track ticket.id) {
+      <li style= "padding-top: 5px">
+        <app-ticket [data]="ticket" (Close)="onCloseTicket(ticket.id)"/>
+      </li>
+    } @empty {
+      <p  style= "font-weight: bold;">No tickets available.</p>
+    }
+  </ol>
+  <app-new-ticket (newticket)="onAdd($event)" />
+</div>

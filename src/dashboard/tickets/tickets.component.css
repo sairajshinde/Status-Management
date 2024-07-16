@@ -1,0 +1,43 @@
+#tickets {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+
+#tickets ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 15rem;
+}
+
+#tickets li {
+  margin: 0.5rem 0;
+}
+
+#tickets p {
+  margin: 0;
+  color: #4f4b53;
+}
+
+#tickets h2 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #38343c;
+}
+
+@media (min-width: 768px) {
+  #tickets {
+    flex-direction: row;
+  }
+}
+ul, ol {
+  list-style-type: none; /* Remove bullets or numbers */
+}
+
+/* Optional: Add padding and margin styles for better spacing */
+ul, ol {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
